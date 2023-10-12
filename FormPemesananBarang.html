@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="icon" href="image/toko.jpg" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokopaedi</title>
+</head>
+<fieldset style="text-align: center;">
+<form action="HasilBarang.html" method="POST">    
+    <th>Beranda |</th>
+    <th>Generate Link |</th>
+    <th>Riwayat Transaksi |</th>
+    <th>Policy |</th>
+    <th>Logout </th>
+</fieldset>
+<header>
+    <div class="container" style="display: flex; align-items: center;">
+        <img src="image/fesbuk.png" alt="Deskripsi gambar di sini" width="200px" height="400px"
+            style="flex: 1; margin-right: 10px;">
+        <div class="deskripsi-dan-isi-kanan" style="flex: 2;">
+            <div style="display: flex; flex-direction: column; margin-bottom: 5px;">
+                <label for="barang">Nama Barang</label>
+                <input type="text" name="title" placeholder="Masukkan Nama Barang">
+            </div>
+            <div style="display: flex; flex-direction: column; margin-bottom: 5px;">
+                <label for="deskripsi">Deskripsi</label>
+                <textarea name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
+            </div>
+            <div style="display: flex; flex-direction: column; margin-bottom: 5px;">
+                <label for="no">Nomor Akun</label>
+                <input type="text" name="no" placeholder="Masukkan Nomor Akun">
+            </div>
+            <div style="display: flex; margin-bottom: 10px; margin-top: 10px;">
+                <label for="bank">Bank :</label>
+                <select name="bank" id="bank">
+                    <option value="bca">BCA</option>
+                    <option value="bri">BRI</option>
+                    <option value="mega">MEGA</option>
+                    <option value="btn">BTN</option>
+                </select>
+            </div>
+            <div style="display: flex; flex-direction: column; margin-bottom: 5px;">
+                <label for="holder">Nama Pemilik Akun</label>
+                <input type="text" name="holder" placeholder="Masukkan Nama Pemilik Akun">
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+                <label for="transaksi">Transaksi :</label>
+                <select name="transaksi" id="transaksi">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>   
+                <p>*Jika transaksi untuk 3 orang, pilih 3 untuk drop-down list</p>
+                <input type="checkbox" id="phone" name="phone" value="send">
+                <label for="phone" style="color: green;">Kirim ke Mobile</label>
+                <br>
+                <input type="checkbox" id="email" name="email" value="email">
+                <label for="email" style="color: green;">Kirim ke Email</label>
+            <div style="display: flex; flex-direction: column; margin-top: 10px;">
+                    <label for="telp">Kirim ke Mobile</label>
+                    <input type="text" name="telp" placeholder="Masukkan Nomor Telp">                
+            </div>
+            <div style="display: flex; flex-direction: column; margin-top: 10px;">
+                <label for="email">Kirim ke Email</label>
+                <input type="text" name="email" placeholder="Masukkan Email">
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+            <input type="submit" value="Kirim Link" name="tombol">
+            </div> 
+        </div>
+    </div>
+</header>
+<body>
+    <tr>
+        <input type="file" name="foto" id="foto">
+    </tr>
+</body>
+</html>
