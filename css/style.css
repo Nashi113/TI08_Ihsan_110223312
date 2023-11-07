@@ -1,0 +1,65 @@
+/* selector element digunakan untuk merujuk pada element html berdasarkan element id*/
+body{
+    background-color: cyan;
+}
+/* selector id digunakan untuk merujuk pada elemnt html berdasarkan atribut id*/
+#header{
+    background-color:burlywood;
+    text-align: center;
+    /*padding penulisan tunggal*/
+    /*padding: 5px;*/
+    /*padding penulisan urutan atas, kanan, bawah, kiri*/
+    padding: 5px 50px 40px 5px;
+}
+
+#header h1{
+    color:blue;
+}
+
+#header blockquote{
+    background-color: yellow;
+    border: 2px dotted;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.gambar{
+    text-align: center;
+}
+
+.gambar img{
+    width: 200px; 
+    height: 180px;
+}
+
+/* selector psuedo-element digunakan untuk merujuk bagian tertentu dari element*/
+/* bisa bagian awal atau bagian akhir saja dalam semua element*/
+.fp::first-letter{
+    color: blueviolet;
+    font-size: 60px;
+}
+
+.koleksi{
+    text-align: center;
+}
+
+.koleksi img{
+    width: 20%;
+}
+
+.promo ol{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+

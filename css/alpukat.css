@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+    padding: 150px;
+}
+
+#header{
+    text-align: center;
+}
+
+#content {
+    text-align: center;
+    margin-top: 2rem;
+    
+}
