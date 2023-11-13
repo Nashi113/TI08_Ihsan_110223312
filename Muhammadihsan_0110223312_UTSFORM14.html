@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+<style>
+fieldset {
+  background-color: #eeeeee;
+  display: grid;
+  grid-template-columns: 200px 1fr 2fr;
+  grid-gap: 9px;
+  text-align: center;
+}
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  text-align: left;
+}
+.tombool{
+    text-shadow: 2px 2px 2px;
+}
+</style>
+</header>
+<body>
+<div class="flex">
+<fieldset>
+    <legend>Form Registrasi Rekreasi Kuliner</legend>
+        <label>Nama Tempat Wisata :</label>
+        <input type="text" name="nama" placeholder="Nama Tempat Wisata">
+        <br>
+        <br>
+        <label for="a">Jenis Wisata :</label>
+                <select name="wisata" id="wisata">
+                    <option value="1">Kedai Kopi</option>
+                    <option value="2">Curug Ciherang</option>
+                    <option value="3">Pantai</option>
+                </select>
+                <br>
+                <br>       
+        <label for="b">Deskripsi Wisata :</label>
+        <textarea name="" id="" cols="35" rows="4"></textarea>
+        <br>
+        <br>
+        <label>Kontak Person :</label>
+        <input type="text" name="kontakp" placeholder="Kontak Person">
+        <br>
+        <br>
+        <label>No HP/Telepon :</label>
+        <input type="text" name="nohp" placeholder="Masukkan Nomor">
+        <br>
+        <br>
+        <label>Email :</label>
+        <input type="text" name="email" placeholder="Masukkan Email">
+        <br>
+        <br>
+        <label class="web1">Alamat Web :</label>
+        <input type="text" name="web" placeholder="https://">
+        <br>
+        <br>
+        <label for="c">Alamat Lengkap :</label>
+        <textarea name="" id="" cols="35" rows="3"></textarea>
+        <br>
+        <br>
+        <label>Latitude,Longitude :</label>
+        <input type="text" name="email">
+        <br>
+        <br>
+    <div class="tombool">
+    <input type="submit" value="Daftar" name="tombol">
+    <input type="reset" value="Batal" name="tombol">
+</div>
+</div>
+</fieldset>
+</body>
+</html>
