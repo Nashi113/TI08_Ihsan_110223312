@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 5rem;
+
+}
+
+nav{
+    background-color: aqua;
+}
+
+nav header{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin: 10px;
+}
