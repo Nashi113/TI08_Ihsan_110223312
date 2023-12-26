@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const loginForm = document.getElementById('loginForm');
+  
+  loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    // Username dan password
+    const correctUsername = 'ahmad2017';
+    const correctPassword = 'integrity';
+    
+    if (username === correctUsername && password === correctPassword) {
+      alert('Login berhasil');
+      // Redirect ke halaman baru jika login sukses
+      window.location.href = 'halaman-baru.html';
+    } else {
+      alert('Login gagal. Coba lagi.');
+    }
+  });
+});
+</script>
+<body>
+  <form id="loginForm">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+
+  <script src="otentikasi.js"></script>
+</body>
+</html>

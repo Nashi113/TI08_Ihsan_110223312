@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurs Rupiah</title>
+    <script>
+        function convertCurrency() {
+  const currencyInput = document.getElementById('currencyInput').value;
+  const currencySelect = document.getElementById('currencySelect').value;
+  let conversionRate;
+
+  switch (currencySelect) {
+    case 'USD':
+      conversionRate = 15409;
+      break;
+    case 'SGD':
+      conversionRate = 11639; 
+      break;
+    case 'MYR':
+      conversionRate = 3322; 
+      break;
+    case 'JPY':
+      conversionRate = 108; 
+      break;
+    case 'EUR':
+      conversionRate = 17013; 
+      break;
+    case 'SAR':
+      conversionRate = 4108; 
+      break;
+    default:
+      conversionRate = 1;
+  }
+
+  const result = currencyInput * conversionRate;
+  document.getElementById('result').value = result;
+}
+    </script>
+  </head>
+  <body>
+    <fieldset>
+        <legend>Kurs Rupiah</legend>
+    <label for="currencyInput">Masukkan Nilai Mata Uang Asing:</label>
+    <input
+      type="number"
+      id="currencyInput"
+      placeholder="Masukkan nilai mata uang asing"
+    />
+
+    <select id="currencySelect">
+      <option value="USD">Dollar US</option>
+      <option value="SGD">Dollar Singapore</option>
+      <option value="MYR">Ringgit Malaysia</option>
+      <option value="JPY">Yen Jepang</option>
+      <option value="EUR">Euro</option>
+      <option value="SAR">Riyal Arab Saudi</option>
+    </select>
+
+    <button onclick="convertCurrency()">Konversi</button>
+
+    <p>Nilai dalam Rupiah:</p>
+    <input type="text" id="result" readonly />
+  </body>
+</fieldset>
+</html>

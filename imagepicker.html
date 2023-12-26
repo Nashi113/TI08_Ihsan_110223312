@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function displaySelectedImage() {
+        const imageSelect = document.getElementById("imageSelect");
+        const selectedImage = imageSelect.value;
+        const displayedImage = document.getElementById("displayedImage");
+        const imageName = document.getElementById("imageName");
+
+        // Mengatur path gambar berdasarkan pilihan dropdown
+        switch (selectedImage) {
+          case "gambar1":
+            displayedImage.src = "image/kodok.jpg";
+            imageName.value = "Kodok";
+            break;
+          case "gambar2":
+            displayedImage.src = "image/beruang.jpg";
+            imageName.value = "Beruang";
+            break;
+          case "gambar3":
+            displayedImage.src = "image/buaya.jpg";
+            imageName.value = "Buaya";
+            break;
+          case "gambar4":
+            displayedImage.src = "image/monyet.jpg";
+            imageName.value = "Monyet";
+            break;
+          default:
+            displayedImage.src = "";
+            imageName.value = "";
+        }
+
+        if (imageName.value !== "") {
+          document.getElementById("imageInfo").style.display = "block";
+          alert("Nama File Gambar: " + imageName.value);
+        } else {
+          document.getElementById("imageInfo").style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <select id="imageSelect" onchange="displaySelectedImage()">
+      <option value="gambar1">Kodok</option>
+      <option value="gambar2">Beruang</option>
+      <option value="gambar3">Buaya</option>
+      <option value="gambar4">Monyet</option>
+    </select>
+
+    <div id="imageContainer">
+      <img
+        id="displayedImage"
+        src="image/kodok.jpg"
+        alt="Tidak ada gambar yang dipilih"
+      />
+    </div>
+
+    <div id="imageInfo" style="display: none">
+      <p>Nama File Gambar:</p>
+      <input type="text" id="imageName" readonly />
+    </div>
+  </body>
+</html>
